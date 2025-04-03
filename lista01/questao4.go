@@ -1,5 +1,7 @@
 package main
+
 import "fmt"
+
 func main () {
 	var salariomin , kw, consumo float32
 	 fmt.Print("Digite o valor do salário mínimo:")

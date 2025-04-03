@@ -1,5 +1,7 @@
 package main
+
 import "fmt"
+
 func main () {
 	var F, pol float64
 		fmt.Print("Digite o valor em Fahrenheit: ")

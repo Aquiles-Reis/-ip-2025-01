@@ -1,5 +1,7 @@
 package main
+
 import "fmt"
+
 func main (){
 	var h, min, s int
 	fmt.Print ("Digite as horas, os minutos e os segundos:")

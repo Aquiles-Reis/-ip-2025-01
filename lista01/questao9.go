@@ -1,5 +1,7 @@
 package main
+
 import "fmt"
+
 func main () {
 	var a, b, c, delta float32
 	fmt.Print ("Digite o valor de suas variáveis:")

@@ -1,5 +1,7 @@
 package main
+
 import "fmt"
+
 func main (){
 	var F float64
 	var n, i int

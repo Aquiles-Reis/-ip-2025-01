@@ -1,5 +1,7 @@
 package main
+
 import "fmt"
+
 func main () {
 	var nota float32
 	fmt.Print ("Digite a nota:")
@@ -12,5 +14,4 @@ func main () {
 		fmt.Print ("C")
 	   } else if nota < 6 {
 		fmt.Print ("D")
-	}
-}
+	}

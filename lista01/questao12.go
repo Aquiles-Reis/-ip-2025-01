@@ -1,5 +1,7 @@
 package main
+
 import "fmt"
+
 func main (){
 	var h, valor int
 	fmt.Print ("Digite o número de horas estacionadas:")

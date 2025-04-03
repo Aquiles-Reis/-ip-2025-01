@@ -1,5 +1,7 @@
 package main
+
 import "fmt"
+
 func main () {
 	var salario float64
 	fmt.Print("Digite o salário:")

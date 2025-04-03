@@ -1,7 +1,9 @@
 package main
+
 import ("fmt"
         "math")
-func main () {
+
+		func main () {
 	var h, a, v, Ab float64
 	fmt.Print ("Digite o valor da altura da pirâmide hexagonal:")
 	fmt.Scan (&h)
