@@ -14,4 +14,5 @@ func main () {
 		fmt.Print ("C")
 	   } else if nota < 6 {
 		fmt.Print ("D")
-	}
+	}
+}
