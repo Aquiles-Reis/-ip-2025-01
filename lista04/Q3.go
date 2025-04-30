@@ -10,9 +10,8 @@ var soma, g int
 for x := 0; x < 10; x++ {
 	fmt.Scan(&num[x])
 }
-	for i, valorp := range num {
+	for _, valorp := range num {
 		if valorp %2 == 0 {
-			i++
 			fmt.Printf("%d ", valorp)
 			soma = soma + valorp
 		}
@@ -20,9 +19,8 @@ for x := 0; x < 10; x++ {
 	fmt.Println()
 	fmt.Println(soma)
 
-	for i, valori := range num {
+	for _, valori := range num {
 		if valori %2 != 0 {
-			i++
 			fmt.Printf("%d ", valori)
 			g++
 		}
