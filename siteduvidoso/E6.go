@@ -1,9 +1,7 @@
 package main 
 
-import "fmt"
-
-func crescente()
-	
+import ("fmt"
+		"sort")
 
 func main (){
 
@@ -21,6 +19,8 @@ func main (){
 	for i:=0; i < n; i++{
 		fmt.Scan(&nus[i])
 	}
+	sort.Ints(nus)
 
+	fmt.Printf("%d ", nus)
 
 }
