@@ -10,7 +10,7 @@ for i := 0; i < n - 1 - j; i++ {
 		}
 	}
 }
-fmt.Println (vet)
+
 }
 
 
@@ -24,5 +24,10 @@ func main (){
 	for i := 0; i < n; i ++ {
 		fmt.Scan(&vet[i])
 	}
-	ordenar(vet, len(vet))
+	ordenar(vet, n)
+
+	for _, x := range vet {
+		fmt.Printf("%d ", x)
+	}
+
 }

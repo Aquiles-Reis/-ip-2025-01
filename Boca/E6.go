@@ -21,6 +21,8 @@ func main (){
 	}
 	sort.Ints(nus)
 
-	fmt.Printf("%d ", nus)
+	for _, x := range nus {
+		fmt.Printf("%d ", x)
+	}
 
 }

@@ -18,11 +18,11 @@ func main (){
 	curLen := 1
 
 
-	for i := 0; i < n; i ++ {
+	for i := 1; i < n; i ++ {
 		if nus[i] > nus [i - 1] {
 			curLen ++
 			if curLen > maxLen {
-			curLen = maxLen 
+			maxLen = curLen 
 			}
 		} else { 
 			curLen = 1

@@ -17,23 +17,12 @@ func main () {
 	}
 	sort.Ints(vet)
 	
-	dif := 0
-	igual := 0
+	dif := 1
 	
-	for x := 0; x < n; x ++ {
-		if x == 0 {
-			if vet[x] != vet[x+1] {
-				dif ++
-			} else {
-				igual ++
-			}
-		} else {	
+	for x := 1; x < n; x ++ {
 		if vet[x] != vet[x-1] {
-		dif ++
-		} else {
-			igual ++
-	}
-	}
-}
+			dif ++
+				}
+			}	
 	fmt.Print(dif)
 }

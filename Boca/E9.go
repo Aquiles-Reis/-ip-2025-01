@@ -23,5 +23,7 @@ func main (){
 		soma += vetM[i]
 		vetF = append(vetF, soma)
 	}
-	fmt.Print(vetF)
+	for _, x := range vetF {
+		fmt.Printf("%d ", x)
+	}
 }
