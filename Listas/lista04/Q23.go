@@ -13,10 +13,17 @@ func clearTerminal() {
     cmd.Run()
 }
 
-func completo() {
-	slice := 0
-	sort.Ints()
-	if slice[0] == 1 {
+func completo(poltronas []int) {
+	sort.Ints(poltronas)
+		ocupadas := true
+
+	for _, assento := poltronas {
+		if assento == 0 {
+			ocupadas = false
+			break
+		}
+	}
+	if ocupadas {
 		fmt.Print("Todas as poltronas estão ocupadas.")
 		time.Sleep(1 * time.Second)
 	}
@@ -33,7 +40,7 @@ func main (){
 	meio := make([]int, 24)
 
 	for {
-	fmt.Print("Você deseja sentar na janela ou no meio?\nDe acordo com sua preferência, digite 1 para ''janela'' ou 2 para ''meio''.\n")
+	fmt.Print("Você deseja sentar na janela ou no meio?\nDigite 1 para 'janela' ou 2 para 'meio'.\n")
 	fmt.Scan(&opcao)
 
 	switch opcao {
@@ -42,6 +49,11 @@ func main (){
 		
 		fmt.Print("\nDigite o número da poltrona na qual você deseja sentar.\n")
 		fmt.Scan(&n)
+
+		if n < 1 || n > 24 {
+			fmt.Println("Esta poltrona não existe, escolha outra entre 1 e 24.")
+			continue
+		}
 
 		if jan[n-1] == 1 {
 			fmt.Print("Esta poltrona já está ocupada.\n")
@@ -58,6 +70,11 @@ func main (){
 		fmt.Print("\nDigite o número da poltrona na qual você deseja sentar.\n")
 		fmt.Scan(&n)
 
+		if n < 1 || n > 24 {
+			fmt.Println("Esta poltrona não existe, escolha outra entre 1 e 24.")
+			continue
+		}
+
 		if meio[n-1] == 1 {
 			fmt.Print("Esta poltrona já está ocupada.\n")
 		}
@@ -67,5 +84,7 @@ func main (){
 		time.Sleep(1 * time.Second)
 		clearTerminal()
 	}
+	completo(jan)
+	completo(meio)
 	}
 }

@@ -14,7 +14,7 @@ func main (){
 	)
 
 	fmt.Println("Digite o código da conta seguido do seu saldo.")
-	for i := 1; i <= 4; i ++ {
+	for i := 1; i <= 20; i ++ {
 		fmt.Scan(&total[i])
 	}
 	for x, y := range total {
@@ -101,7 +101,7 @@ func main (){
 		for _, g := range saldo {
 			saldototal += g
 		}	
-		fmt.Printf("O ativo bancário é de R$%.2f", saldototal)
+		fmt.Printf("O ativo bancário é de R$%.2f\n", saldototal)
 		time.Sleep(1 * time.Second)
 	}
 	} 
